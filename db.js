@@ -10,9 +10,18 @@ mongoose.connect(process.env.MONGO_URL)
 })
 
 const peopleschema=new mongoose.Schema({
-    fname:String,
-    lname:String,
-    email:String
+    fname:{
+        type:String,
+        required:[true,"First name is mandatory"]
+    },
+    lname:{
+        type:String,
+        required:[true,"First name is mandatory"]
+    },
+    email:{
+        type:String,
+        required:[true,"First name is mandatory"]
+    }
 })
 
 module.exports=mongoose.model("users",peopleschema)
