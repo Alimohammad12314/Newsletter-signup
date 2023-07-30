@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+div{
+    position: absolute;
+    
+}
+
+
+.form{
+    
+    left: 67%;
+    top: 25%;
+    text-align: center;
+
+}
+
+.items{
+     width: 210px;
+     height: 42px;
+     margin-bottom: 5px;
+     border-style: none;
+     border-radius: 2%;
+     
+     
+}
+.items:hover{
+    
+    border-color: black;
+}
+.btn{
+    margin: 4px;
+    width: 210px;
+}
+
+.intro{
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}
+.bi{
+    margin: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    img{
+        display: none;
+    }
+    div{
+      
+       
+       position: static;
+       margin: auto;
+       padding: 1rem;
+       background-color: rgb(130, 218, 189);
+    }
+
+  }
